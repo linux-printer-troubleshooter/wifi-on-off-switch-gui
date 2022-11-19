@@ -1,0 +1,10 @@
+[Desktop Entry]
+GenericName=Wifi On/Off
+Type=Application
+Exec=/home/punitabc/wifi_.sh
+Name=Wifi On Off
+Icon=network.png
+Categories=Office
+Encoding=UTF-8
+Terminal=false
+X-Desktop-File-Install-Version=0.24
