@@ -11,9 +11,9 @@ status=$(nmcli device show $name | grep GENERAL.STATE | awk '{print $2}');
 #if loop changes appearance of off and on toggle
 if [[ $status -eq 20 ]]
 then
-arg=$(zenity --forms --title="$your_title" --text="" --add-list="$name" --list-values="Off|On" --column-values="Select");
+arg=$(zenity --forms --title="$your_title" --text="Nmcli Dialog\n On or off" --add-list="$name" --list-values="Off|On" --column-values="Select");
 else
-arg=$(zenity --forms  --title="$your_title" --text="" --add-list="$name" --list-values="On|Off" --column-values="Select");
+arg=$(zenity --forms  --title="$your_title" --text="Nmcli Dialog\n On or off" --add-list="$name" --list-values="On|Off" --column-values="Select");
 fi;
 
 #confirms selected action
